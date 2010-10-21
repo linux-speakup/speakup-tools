@@ -6,16 +6,16 @@ echo "3 Français ISO-8859-1"
 read -p "Choose the language " r
 case $r in
   1)
-    cp locales/en_CA/* /sys/accessibility/speakup/i18n
+    cp @pkgdatadir@/locales/en_CA/* /sys/accessibility/speakup/i18n
     speakupconf save
     ;;
   2)
-    cp locales/fr/* /sys/accessibility/speakup/i18n
+    cp @pkgdatadir@/locales/fr/* /sys/accessibility/speakup/i18n
     speakupconf save
     ;;
   3)
     (
-    	cd locales/fr
+    	cd @pkgdatadir@/locales/fr
 	for i in *
 	do
 	    iconv -f UTF-8 -t latin1 < $i > /sys/accessibility/speakup/i18n/$i

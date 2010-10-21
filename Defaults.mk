@@ -8,4 +8,6 @@ datadir = $(prefix)/share
 mandir = $(datadir)/man
 pkgdatadir = $(datadir)/$(package)
 
+CHMOD = chmod
 INSTALL = install
+SED = sed
