@@ -12,10 +12,10 @@ fr_DATA = \
 	states
 
 all:
-clean:
 
 install:
 	$(INSTALL) -d $(fr_dir)
 	$(INSTALL) -m 644 $(fr_DATA) $(fr_dir)
 
+distclean: clean
 clean:

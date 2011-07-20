@@ -15,5 +15,6 @@ speakup_setlocale: speakup_setlocale.in
 	$(SED) -e 's:@pkgdatadir@:$(pkgdatadir):' $< > $@
 	$(CHMOD) +x $@
 
+distclean: clean
 clean:
 	-rm -f speakup_setlocale

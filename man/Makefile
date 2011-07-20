@@ -8,4 +8,5 @@ install:
 	$(INSTALL) -d $(DESTDIR)$(mandir)/man1
 	$(INSTALL) -m 644 $(man1_MANS) $(DESTDIR)$(mandir)/man1
 
+distclean: clean
 clean:

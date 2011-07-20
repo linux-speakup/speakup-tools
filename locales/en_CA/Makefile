@@ -17,4 +17,5 @@ install:
 	$(INSTALL) -d $(en_CA_dir)
 	$(INSTALL) -m 644 $(en_CA_DATA) $(en_CA_dir)
 
+distclean: clean
 clean:
