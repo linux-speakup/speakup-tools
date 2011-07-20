@@ -3,6 +3,8 @@ include ../Defaults.mk
 bin_SCRIPTS = speakup_setlocale speakupconf
 sbin_SCRIPTS = talkwith
 
+all:
+
 install: speakup_setlocale
 	$(INSTALL) -d $(DESTDIR)$(bindir)
 	$(INSTALL)  $(bin_SCRIPTS) $(DESTDIR)$(bindir)
@@ -12,3 +14,6 @@ install: speakup_setlocale
 speakup_setlocale: speakup_setlocale.in
 	$(SED) -e 's:@pkgdatadir@:$(pkgdatadir):' $< > $@
 	$(CHMOD) +x $@
+
+clean:
+	-rm -f speakup_setlocale

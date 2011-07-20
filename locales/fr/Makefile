@@ -11,6 +11,11 @@ fr_DATA = \
 	key_names \
 	states
 
+all:
+clean:
+
 install:
 	$(INSTALL) -d $(fr_dir)
 	$(INSTALL) -m 644 $(fr_DATA) $(fr_dir)
+
+clean:

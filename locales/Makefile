@@ -1,5 +1,5 @@
 include ../Defaults.mk
 
-install:
-	$(MAKE) -C en_CA install
-	$(MAKE) -C fr install
+%:
+	$(MAKE) -C en_CA $@
+	$(MAKE) -C fr $@
