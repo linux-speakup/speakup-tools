@@ -14,8 +14,8 @@ en_CA_DATA = \
 all:
 
 install:
-	$(INSTALL) -d $(en_CA_dir)
-	$(INSTALL) -m 644 $(en_CA_DATA) $(en_CA_dir)
+	$(INSTALL) -d $(DESTDIR)$(en_CA_dir)
+	$(INSTALL) -m 644 $(en_CA_DATA) $(DESTDIR)$(en_CA_dir)
 
 distclean: clean
 clean:
