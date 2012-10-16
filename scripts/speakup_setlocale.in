@@ -3,7 +3,8 @@ echo "List of languages"
 echo "1 Canadian English"
 echo "2 Français UTF8"
 echo "3 Français ISO-8859-1"
-read -p "Choose the language " r
+echo -n "Choose the language "
+read r
 case $r in
   1)
     cp @pkgdatadir@/locales/en_CA/* /sys/accessibility/speakup/i18n
